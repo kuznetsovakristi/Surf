@@ -1,0 +1,66 @@
+.section-form {
+  background: url('../img/cta.jpg') center center / cover no-repeat;
+  color: white;
+}
+
+.form {
+  display: flex;
+}
+
+.form__col {
+  flex: 1;
+  margin-right: 26px;
+
+  &:last-child{
+    margin-right: 0;
+  }
+}
+
+.form__row {
+  display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.form__block {
+  flex: 1;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.form__input {
+  width: 100%;
+  border-radius: 4px;
+  padding: 18px 11px;
+  border: solid 3px transparent;
+  outline: none;
+
+&--textarea {
+  height: 171px;
+  resize: none;
+}
+
+  &:focus {
+    border-color: #FFD517;
+}
+}
+
+.form__label {
+  flex-grow: 1;
+  width: 20%;
+}
+
+.form__title {
+  margin-bottom: 5px;
+}
+
+.form__controls {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}

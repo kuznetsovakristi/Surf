@@ -1,0 +1,24 @@
+.section {
+  height: 100vh;
+  min-height: 650px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.section__title {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #292929;
+}
+
+.headline__subtitle {
+color: #666666;
+}
+
+.section__title-form {
+  color: white;
+}

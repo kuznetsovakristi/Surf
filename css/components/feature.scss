@@ -1,0 +1,19 @@
+.feature {
+  display: flex;
+}
+
+.feature__icon {
+  width: 41px;
+  margin-right: 11px;
+
+  &:hover {
+    background-color:  #FEDB3F;
+    transition: 1s;
+  }
+}
+
+.feature__text {
+  font-size: 16px;
+  font-weight: bold;
+  max-width: 90px;
+}
