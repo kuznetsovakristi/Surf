@@ -1,5 +1,5 @@
-//normalize
-@import url("http://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css");
+//normaliz
+@import "base/normalize.scss";
 
 $containerWidth: 940px;
 $baseFontSize: 18px;
@@ -19,7 +19,6 @@ $blue: #1968B1;
 @import "components/layout.scss";
 
 //components
-@import "components/normalize.scss";
 @import "components/hero.scss";
 @import "components/header.scss";
 @import "components/features.scss";
