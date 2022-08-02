@@ -656,7 +656,7 @@ img {
   position: relative;
 }
 .benefits__item:before {
-  content: url("/img/decor/separator.png");
+  content: url("../img/decor/separator.png");
   position: absolute;
   top: 60px;
   right: 0;
