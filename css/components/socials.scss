@@ -1,0 +1,31 @@
+.socials__list {
+  display: flex;
+  justify-content: space-between;
+
+  @include phones {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.socials__item {
+  margin-right: rem(14px);
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.socials {
+  margin-bottom: rem(35px);
+
+  &__icon {
+  width: rem(24px);
+  height: rem(24px);
+  fill: #B3B3B3; 
+  &:hover {
+    fill: #292929;
+    transition: 1s;
+  } 
+  }
+}

@@ -1,8 +1,40 @@
+.logo {
+  width: rem(60px);
+  height: rem(50px);
+  fill: #fff; 
+  &:hover {
+    fill: #292929;
+    transition: 1s;
+  }
+}
+
 .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 10%;
+
+  @include tablets {
+    background: #1968B1;
+    height: rem(91px);
+  }
+}
+
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contacts {
+  @include tablets {
+    display: none;
+  }
+
+  &:hover {
+    color:  #292929;
+    transition: 1s;
+  }
 }
 
 .menu__list {
@@ -10,29 +42,28 @@
   align-items: center;
 }
 
-.menu__item {
- margin-right: 22px;
- font-weight: bold;
-
-  &:last-child{
-    margin-right: 0;
-  }
-}
-
-.menu__link {
-  text-decoration: none;
-}
-
-.contacts__number {
-  font-size: 22px;
+.phone {
+  font-size: rem(24px);
   font-weight: bold;
   text-decoration: none;
   display: flex;
   align-items: center;
+  
 }
 
 .phone-number__icon-elem {
-  width: 12px;
-  height: 12px;
-  margin-right: 6px;
+  width: rem(18px);
+  height: rem(17px);
+  margin-right: rem(10px);
+  flex-shrink: 0;
+  fill: #fff;
+
+  &:hover {
+    fill: #292929;
+    transition: 1s;
+  }
+}
+
+.phone-number__text {
+  white-space: nowrap;
 }

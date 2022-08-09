@@ -1,9 +1,15 @@
 .features {
   display: flex;
+  align-items: center;
 }
 
 .features__item {
-  margin-right: 30px;
+  margin-right: rem(30px);
+
+  &:hover {
+    color: #292929;
+    transition: 1s;
+  }
 
   &:last-child {
     margin-right: 0;

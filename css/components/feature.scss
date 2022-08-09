@@ -1,19 +1,22 @@
 .feature {
   display: flex;
+  align-items: center;
 }
 
 .feature__icon {
-  width: 41px;
-  margin-right: 11px;
+  width: rem(41px);
+  height: rem(41px);
+  margin-right: rem(11px);
+  fill: #fff;
 
   &:hover {
-    background-color:  #FEDB3F;
-    transition: 1s;
+    fill: #FEDB3F;
+    transition: .3s;
   }
 }
 
 .feature__text {
-  font-size: 16px;
+  font-size: rem(17px);
   font-weight: bold;
-  max-width: 90px;
+  max-width: rem(90px);
 }
