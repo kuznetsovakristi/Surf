@@ -436,6 +436,16 @@ img {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+@media screen and (max-width: 768px) {
+  .hero {
+    background: url("../img/hero_banner_tablet.jpg") center center/cover no-repeat;
+  }
+}
+@media screen and (max-width: 480px) {
+  .hero {
+    background: url("../img/hero_banner_mobile.jpg") center center/cover no-repeat;
+  }
+}
 .hero:before {
   content: "";
   display: -webkit-box;
@@ -998,6 +1008,16 @@ img {
 .section-form {
   background: url("../img/cta.jpg") center center/cover no-repeat;
   color: white;
+}
+@media screen and (max-width: 768px) {
+  .section-form {
+    background: url("../img/cta_tablet.jpg") center center/cover no-repeat;
+  }
+}
+@media screen and (max-width: 480px) {
+  .section-form {
+    background: url("../img/cta_mobile.jpg") center center/cover no-repeat;
+  }
 }
 
 .form {

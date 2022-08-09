@@ -1,5 +1,13 @@
 .section-form {
   background: url('../img/cta.jpg') center center / cover no-repeat;
+
+  @include tablets {
+    background: url("../img/cta_tablet.jpg") center center / cover no-repeat;
+  }
+  
+  @include phones {
+    background: url("../img/cta_mobile.jpg") center center / cover no-repeat;
+  }
   color: white;
 }
 
