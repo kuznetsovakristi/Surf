@@ -104,7 +104,7 @@ class Slider {
         if (this.settings.auto) {
             setInterval(() => {
                 this.next()
-            }, 500000)
+            }, 5000)
         }
     }
 
@@ -115,3 +115,23 @@ const slider = new Slider('#slider', {
     loop: true,
     auto: true
 })
+
+
+
+(function () {
+    // const $ = require('fancybox');
+    const slider = $(".slider__list").bxSlider({
+      pager: false,
+      controls: false
+    })
+  
+    $(".products__prev").on("click", e => {
+      e.preventDefault();
+      slider.goToPrevSlide();
+    })
+  
+    $(".products__next").on("click", e => {
+      e.preventDefault();
+      slider.goToNextSlide();
+    })
+  })();
