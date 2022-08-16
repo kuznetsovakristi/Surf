@@ -22,7 +22,6 @@ $blue: #1968B1;
 @import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;500;700;800&display=swap");
 @import "components/layout.scss";
 @import "media.scss";
-@import "//sprite.svg";
 
 //components
 @import "components/hero.scss";
@@ -43,3 +42,6 @@ $blue: #1968B1;
 @import "components/socials.scss";
 @import "components/menu.scss";
 @import "components/hamburger.scss";
+@import "components/screen-menu.scss";
+@import "components/products.scss";
+@import "components/product-card.scss";

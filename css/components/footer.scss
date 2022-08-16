@@ -22,7 +22,6 @@
 .footer__contacts {
   font-size: rem(21px);
   font-style: normal;
-  margin-bottom: rem(10px);
 
   @include phones {
     display: flex;
@@ -37,7 +36,7 @@
 }
 
 
-.footer-section {
+.section-footer {
   background: url('../img/map.jpg') center center / cover no-repeat;
   color: white;
   margin-bottom: rem(20px);

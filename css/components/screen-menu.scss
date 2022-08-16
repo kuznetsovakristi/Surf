@@ -1,0 +1,49 @@
+.screen-menu {
+  position: fixed;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  height: 100%;
+  background-color: #333537;
+  display: flex;
+  justify-content: center;
+  padding-top: rem(135px);
+  transition: .5s;
+
+  &.open {
+    left: 0;
+  }
+}
+
+.screen-menu__icon-close {
+  fill: #fff;
+  width: rem(20px);
+  height: rem(20px);
+
+  &:hover {
+    fill: #FEDB3F;
+    transition: 1s;
+  }
+}
+
+
+.screen-menu__column {
+  display: flex;
+  flex-direction: column;
+  font-size: rem(36px);
+  line-height: rem(72px);
+  color: #fff;
+}
+
+.screen-menu__item {
+  text-align: center;
+}
+
+.screen-menu__link {
+  text-decoration: none;
+
+  &:hover {
+    color:  #FEDB3F;
+    transition: 1s;
+  }
+}

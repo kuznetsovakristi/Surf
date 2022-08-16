@@ -12,11 +12,13 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-top: rem(30px);
   margin-bottom: 10%;
 
   @include tablets {
     background: #1968B1;
     height: rem(91px);
+    margin-top: 0;
   }
 }
 
@@ -35,11 +37,6 @@
     color:  #292929;
     transition: 1s;
   }
-}
-
-.menu__list {
-  display: flex;
-  align-items: center;
 }
 
 .phone {

@@ -37,3 +37,16 @@
   }
 }
 
+.button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+  .button__close {
+    position: absolute;
+    top: rem(42px);
+    right: rem(42px);
+  }
+
+

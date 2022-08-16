@@ -15,4 +15,9 @@
   height: rem(5px);
   border-radius: 20%;
   background: #fff;
+
+  &:hover {
+    background:  #FEDB3F;
+    transition: 1s;
+  }
 }
