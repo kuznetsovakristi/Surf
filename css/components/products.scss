@@ -7,7 +7,7 @@
 .products__item {
   display: flex;
   flex: 0 0 100%;
-  padding: 0 50px;
+  padding: 0 rem(50px);
 
   @include tablets {
     display: flex;
@@ -45,7 +45,7 @@
   margin-bottom: rem(23px);
 
   @include tablets {
-    font-size: 30px;
+    font-size: rem(30px);
     margin-bottom: rem(14px);
   }
 
@@ -56,11 +56,11 @@
 
 
 .products__desc {
-  font-size: 18px;
+  font-size: rem(18px);
   margin-bottom: rem(24px);
 }
   .products__weight-title {
-    font-size: 18px;
+    font-size: rem(18px);
   }
 
 .products__weight {
