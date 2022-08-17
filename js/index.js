@@ -104,7 +104,7 @@ class Slider {
         if (this.settings.auto) {
             setInterval(() => {
                 this.next()
-            }, 100000)
+            }, 8000)
         }
     }
 

@@ -95,9 +95,9 @@
 .products__price {
   color: #151515;
   font-weight: 300;
-  font-size: 60px;
-  line-height: 60px;
-  margin-right: 30px;
+  font-size: rem(60px);
+  line-height: rem(60px);
+  margin-right: rem(28px);
 }
 
 .products__prev, .products__next {

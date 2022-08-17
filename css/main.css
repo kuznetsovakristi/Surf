@@ -1641,9 +1641,9 @@ img {
 .products__price {
   color: #151515;
   font-weight: 300;
-  font-size: 60px;
-  line-height: 60px;
-  margin-right: 30px;
+  font-size: 3.3333333333rem;
+  line-height: 3.3333333333rem;
+  margin-right: 1.5555555556rem;
 }
 
 .products__prev, .products__next {
