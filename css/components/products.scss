@@ -38,7 +38,7 @@
 }
 .products__title {
   font-weight: 700;
-  font-size: 36px;
+  font-size: rem(36px);
   line-height: rem(43px);
   text-transform: uppercase;
   color: #292929;
@@ -57,7 +57,7 @@
 
 .products__desc {
   font-size: 18px;
-  margin-bottom: 24px;
+  margin-bottom: rem(24px);
 }
   .products__weight-title {
     font-size: 18px;
@@ -65,7 +65,7 @@
 
 .products__weight {
   display: flex;
-  margin-bottom: 24px;
+  margin-bottom: rem(24px);
 
   @include tablets {
     justify-content: center;
@@ -77,7 +77,7 @@
   flex-direction: column;
 }
 .products__weight-item:not(:first-child) {
-  margin-left: 44px;
+  margin-left: rem(44px);
 }
 .products__weight-count {
   color: #000;

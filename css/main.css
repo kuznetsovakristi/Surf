@@ -1562,7 +1562,7 @@ img {
 
 .products__title {
   font-weight: 700;
-  font-size: 36px;
+  font-size: 2rem;
   line-height: 2.3888888889rem;
   text-transform: uppercase;
   color: #292929;
@@ -1582,7 +1582,7 @@ img {
 
 .products__desc {
   font-size: 18px;
-  margin-bottom: 24px;
+  margin-bottom: 1.3333333333rem;
 }
 
 .products__weight-title {
@@ -1593,7 +1593,7 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 24px;
+  margin-bottom: 1.3333333333rem;
 }
 @media screen and (max-width: 768px) {
   .products__weight {
@@ -1614,7 +1614,7 @@ img {
 }
 
 .products__weight-item:not(:first-child) {
-  margin-left: 44px;
+  margin-left: 2.4444444444rem;
 }
 
 .products__weight-count {
