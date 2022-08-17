@@ -104,8 +104,9 @@
 position: absolute;
 top: 50%;
 transform: translateY(-50%);
-width: rem(24px);
-height: rem(40px);
+background-color: initial;
+border: none;
+cursor: pointer;
 
 @include tablets {
   top: 30%;
@@ -138,4 +139,7 @@ height: rem(40px);
   }
 }
 
-/*# sourceMappingURL=main.css.map */
+.products__prev-icon, .products__next-icon {
+  width: rem(13px);
+  height: rem(27px);
+}

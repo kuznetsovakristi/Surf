@@ -104,34 +104,26 @@ class Slider {
         if (this.settings.auto) {
             setInterval(() => {
                 this.next()
-            }, 5000)
+            }, 100000)
         }
     }
 
 }
 
 const slider = new Slider('#slider', {
-    transition: 3000,
+    transition: 2000,
     loop: true,
     auto: true
 })
 
 
-
-(function () {
-    // const $ = require('fancybox');
-    const slider = $(".slider__list").bxSlider({
-      pager: false,
-      controls: false
-    })
-  
-    $(".products__prev").on("click", e => {
-      e.preventDefault();
-      slider.goToPrevSlide();
-    })
-  
-    $(".products__next").on("click", e => {
-      e.preventDefault();
-      slider.goToNextSlide();
-    })
-  })();
+ // назначим обработчик при нажатии на кнопку .btn-prev
+ document.querySelector('.products__prev').onclick = function () {
+    // перейдём к предыдущему слайду
+    slider.prev();
+  }
+  // назначим обработчик при нажатии на кнопку .btn-next
+  document.querySelector('.products__next').onclick = function () {
+    // перейдём к следующему слайду
+    slider.next();
+  };
