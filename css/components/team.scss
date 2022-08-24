@@ -1,0 +1,19 @@
+.team__title {
+    margin-top: 0;
+    margin-bottom: rem(53px);
+  }
+
+  .team__list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: rem(50px);
+
+    @include tablets {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  .team__section {
+    margin-top: rem(67px);
+  }

@@ -1,0 +1,67 @@
+.review-card {
+  background-color: #f8faf9;
+  min-height: rem(348px);
+
+  @include tablets {
+    min-height: rem(418px);
+  }
+
+  &__inner {
+    display: flex;
+    padding: rem(42px);
+    padding-right: rem(142px);
+
+    @include tablets {
+      flex-direction: column;
+      align-items: center;
+      padding: rem(56px) rem(24px) rem(46px);
+      text-align: center;
+    }
+  }
+
+  &__avatar-wrap {
+    display: flex;
+    align-items: center;
+  }
+
+  &__avatar {
+   max-width: rem(253px);
+    height: rem(264px);
+    margin-right: rem(40px);
+
+    @include tablets {
+      width: rem(130px);
+      height: rem(130px);
+      margin-right: 0;
+    }
+  }
+
+  &__block {
+    padding-top: rem(28px);
+  }
+
+  &__title {
+    color: $black;
+    font-weight: 700;
+    font-size: rem(27px);
+    line-height: 1.2;
+    margin-bottom: rem(14px);
+  }
+
+  &__text {
+    color: #000;
+    font-weight: 400;
+    font-size: rem(18px);
+    line-height: 1.2;
+    margin-bottom: rem(25px);
+  }
+
+  &__name {
+    color: $black;
+    font-weight: 500;
+    font-size: rem(18px);
+    line-height: 1.3;
+  }
+}
+
+

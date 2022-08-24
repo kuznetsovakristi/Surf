@@ -76,6 +76,13 @@
     border-color: #FFD517;
 }
 
+  &-invalid,
+  &-textarea-invalid,
+  &-invalid:focus,
+  &-textarea-invalid:focus {
+    border: 3px solid red;  
+  }
+
 @include tablets {
   padding: rem(10px) rem(8px);
 }

@@ -1,4 +1,4 @@
-.btn {
+.btn, .btn__modal {
   font-size: rem(16px);
   font-weight: 800;
   text-transform: uppercase;
@@ -8,6 +8,19 @@
   text-decoration: none;
   border: none;
   margin-right: rem(22px);
+
+  &--yellow {
+    background: #FEDB3F;
+     color: #000000;
+     transition: 1s;
+     margin-right: 0;
+
+     &:hover {
+      color: #FEDB3F;
+      background: #000000;
+      transition: 1s;
+  }
+}
 
   &--theme--yellow {
    background: #FEDB3F;

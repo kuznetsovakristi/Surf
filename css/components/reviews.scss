@@ -1,68 +1,73 @@
-.reviews__switcher {
-  display: flex;
+.reviews {
   justify-content: center;
-}
 
-.reviews__display {
-  background: #F8FAF9;
-  padding:  rem(50px) rem(25px);
-  margin-bottom: rem(30px);
-}
-
-.reviews__display-inner {
-  display: flex;
-  align-items: center;
-
-   @include tablets {
-    flex-direction: column;
+  .container {
+    display: flex;
+    justify-content: center;
     align-items: center;
-    text-align: center;
+    flex-direction: column;
+
+    @include phones {
+      padding: 0 1rem;
+    }
   }
-}
 
-.reviews__avatar {
-  width: rem(254px);
-  height: rem(260px);
-
-  @include tablets {
-    width: rem(130px);
-    height: rem(130px);
+  .title {
+    margin-top: 0;
     margin-bottom: rem(32px);
   }
-}
 
-.reviews__avatar-img {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-}
+  &__list {
+    margin-bottom: rem(15px);
 
-.reviews__content {
-  flex: 1;
-  margin-left: rem(40px);
-  max-width: rem(463px);
-  max-width: rem(680px);
-
-  @include tablets {
-    padding: 0;
-    margin: 0 0 rem(16px) 0;
-    text-align: center;
+    @include tablets {
+      margin-bottom: rem(32px);
+    }
   }
-}
 
-.reviews__title {
-  font-size: rem(27px);
-  font-weight: bold;
-  margin-bottom: rem(14px);
-  color: #292929;
-}
+  &__item {
+    display: none;
 
-.reviews__text {
-  margin-bottom: rem(25px);
-}
+    &--active {
+      display: block;
+    }
+  }
 
-.reviews__author {
-  font-size: rem(18px);
-  font-weight: bold;
-  color: #292929;
+  &__pagination-list {
+    display: flex;
+  }
+
+  &__pagination-item:not(:last-child) {
+    margin-right: rem(6px);
+  }
+
+  &__pagination-btn {
+    position: relative;
+    border: none;
+    background: none;
+  }
+
+  &__pagination-btn::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 86%;
+    height: 90%;
+    top: 0px;
+    left: 2px;
+    border-radius: 50%;
+    border: 0 solid $yellow;
+    transition: 0.1s;
+  }
+
+  &__pagination-item--active &__pagination-avatar {
+    border-color: $yellow;
+  }
+
+  &__pagination-avatar {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 4px solid transparent;
+  }
 }
