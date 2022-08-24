@@ -1581,6 +1581,11 @@ img {
             align-items: center;
   }
 }
+@media screen and (max-width: 480px) {
+  .products__item {
+    padding: 0;
+  }
+}
 
 .products__preview {
   width: 100%;
